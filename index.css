@@ -1,0 +1,365 @@
+html{
+  font-size: 62.5%;
+}
+
+.parent_div {
+    width: 100vw;  
+    min-height: 100vh;
+    
+    background-color: #c7ecee;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .parent_div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #95afc0;
+    border-radius: 0 0 200rem 200rem;    
+  }
+
+  
+.img{
+    height: 22rem;
+    width: 22rem;
+    margin-left: 11rem;
+    margin-right: 11rem;
+    filter: drop-shadow( 1rem 1rem 1rem #7e94a3);
+    transition: all 0.3s ease-in-out;  
+    
+}
+
+.img:hover{
+  filter: drop-shadow(1rem 1rem 1rem #5f27cd);
+}
+
+.heading{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 6rem;
+  color: #5f27cd;
+  text-shadow: 0 0 1.3rem rgb(139, 139, 139);
+}
+
+
+.btn_div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+
+.button{
+  margin-left: 14rem;
+  margin-right: 14rem;
+  height: 4rem;
+  width: 17rem;
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: rgb(7, 6, 15);
+  border: 2px solid #5f27cd;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  border-radius: 5px;
+  transition: ease-out 0.3s;
+  
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+
+}
+.button:hover{
+  cursor: pointer;
+  color:#fff;
+}
+.button:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top:0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #5f27cd;
+
+}
+.button:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.headeram{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  padding:0.5em;
+    
+}
+.headeram:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.25rem;
+  width:18rem;
+  background-color: #5f27cd;
+}
+
+.headeram h1{
+  color: rgb(7, 6, 15);
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 5rem;
+}
+.about_me1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+.about_me2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.proimg{
+  height: 28rem;
+  width: 28rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 60rem;
+  overflow: hidden;    
+}
+
+.text
+{
+  font-family: 'Zen Loop', cursive;
+  
+  margin-left: 20rem;
+  font-size: 3.5rem;
+  font-weight: 750;
+  color: #5f27cd;
+  letter-spacing: 0.01em;
+  margin-right: 10rem;
+  margin-bottom: 20rem;
+  overflow: hidden;  
+  
+}
+
+.footer{
+  width: 100vw;
+  height: 5rem;
+  background-color: #303952;
+  
+}
+p{
+text-align: center;
+text-transform: capitalize;
+color: #fff;
+line-height: 5rem;
+font-size: 1.5rem;
+}
+/*                    User page CSS                  */
+.backone{
+  width: 100vw;
+  height: auto;
+  background-color: #c7ecee;
+  
+}
+.headera{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  padding:0.5em;
+}
+.headera:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.25rem;
+  width: 28rem;
+  background-color: #5f27cd;
+}
+
+.headera h1{
+  color: #5f27cd;
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 4rem;
+  text-shadow: 0 0 1.3rem rgb(158, 158, 158);
+}
+.buttona{
+ 
+  height: 3.5rem;
+  width: 12rem;
+  font-size: 0.9rem;
+  font-weight: 550;
+  color: rgb(7, 6, 15);
+  border: 2px solid #5f27cd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+
+}
+.buttona:hover{
+  cursor: pointer;
+  color:#fff;
+}
+.buttona:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top:0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #5f27cd;
+
+}
+.buttona:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+.home{
+  display: flex;
+  justify-content: flex-end;
+  margin-top:6.2rem ;
+}
+.list{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+/*                           Transfer page CSS                                            */
+.backtwo{
+  width: 100vw;
+  height: 100vh;
+  background-color: #c7ecee;
+  
+}
+
+.headert{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  padding:0.5em;
+}
+.headert:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.25rem;
+  width: 25rem;
+  background-color: #5f27cd;
+}
+
+.headert h1{
+  color: #5f27cd;
+  text-shadow: 0 0 1.3rem rgb(158, 158, 158);
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 4rem;
+  
+}
+
+strong{
+  font-size: 20px;
+}
+
+/*                                Transaction History                           */
+
+.backthree{
+  width: 100vw;
+  height: 100vh;
+  background-color: #c7ecee;
+  
+}
+
+.headerh{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  padding:0.5em;
+}
+.headerh:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.25rem;
+  width: 31rem;
+  background-color: #5f27cd;
+}
+
+.headerh h1{
+  color: #5f27cd;
+  text-shadow: 0 0 1.3rem rgb(158, 158, 158);
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 4rem;
+  
+}
